@@ -19,7 +19,9 @@ const SongContainer = () => {
     return (
         <>
         <h1>Song container here</h1>
-        <SongList />
+        <SongList 
+        songs={songs}
+        />
         </>
     )
 

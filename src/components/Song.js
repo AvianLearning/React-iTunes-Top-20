@@ -1,7 +1,10 @@
-const Song = () => {
+const Song = ({title, artist}) => {
 
     return (
-        <li>Song item</li>
+        <li>
+            <p>{title}</p>
+            <p>{artist}</p>
+        </li>
     )
 }
 
