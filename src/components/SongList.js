@@ -2,12 +2,12 @@ import Song from './Song';
 
 const SongList = ({songs}) => {
 
-    const songList = songs.map(song => {
+    const songList = songs.map((song, index) => {
         return (
            <Song 
-            title={song["entry"]["title"]}
-            key={song["entry"]["category"]["attributes"]["im:id"]}
-            artist={song["entry"]["im:artist"]["label"]}>
+            title={song["title"]}
+            key={index}
+            artist={song["im:artist"]["label"]}>
            </Song> 
         )
     })
