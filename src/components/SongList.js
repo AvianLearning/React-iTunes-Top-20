@@ -5,8 +5,9 @@ const SongList = ({songs}) => {
     const songList = songs.map((song, index) => {
         return (
            <Song 
-            title={song["title"]}
+            title={song.title.label}
             key={index}
+            position={index + 1}
             artist={song["im:artist"]["label"]}>
            </Song> 
         )
