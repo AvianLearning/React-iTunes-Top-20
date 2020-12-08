@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import SongList from '../components/SongList'
+import './SongContainer.css'
 
 const SongContainer = () => {
 
@@ -17,12 +18,13 @@ const SongContainer = () => {
     }, []);
 
     return (
-        <>
-        <h1>Song container here</h1>
-        <SongList 
-        songs={songs}
-        />
-        </>
+        <div className="song-container">
+             <h1>UK iTunes top 20 chart</h1>
+             <hr/>
+            <SongList 
+            songs={songs}
+            />
+        </div>
     )
 
 }

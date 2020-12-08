@@ -1,9 +1,12 @@
-const Song = ({title, artist}) => {
+import './Song.css';
+
+const Song = ({title, artist, position, image}) => {
 
     return (
-        <li>
-            <p>{title}</p>
-            <p>{artist}</p>
+        <li className="song-item">
+            <img src={image} alt="Song artwork" />
+            <p>{position}. {title}</p>
+            <p id="artist-name">{artist}</p>
         </li>
     )
 }

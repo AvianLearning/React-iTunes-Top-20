@@ -1,0 +1,16 @@
+.song-item {
+    flex: 0 1 150px;
+    background-color: #fff;
+    margin: 0.5em;
+    padding: 1rem;
+    font-size: medium;
+}
+
+.song-item > img {
+    box-shadow: 4px 3px 2px 0px #B6BAB4;
+}
+
+.song-item > #artist-name {
+    font-style: italic;
+    font-size: small;
+}

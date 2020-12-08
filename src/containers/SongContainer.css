@@ -1,0 +1,7 @@
+.song-container {
+    padding: 10px;
+} 
+
+.song-container > h1 {
+    text-align: center;
+}
